@@ -1,0 +1,65 @@
+/trades get
+CURL EXAMPLE
+curl -X GET "https://api.bitpanda.com/v1/trades" \
+	-H "X-API-KEY: string"
+RESPONSE BODY
+200
+{
+  "data": [
+    {
+        "type": "trade",
+        "attributes": {
+            "status": "finished",
+            "type": "buy",
+            "cryptocoin_id": "1",
+            "fiat_id": "1",
+            "amount_fiat": "100.00",
+            "amount_cryptocoin": "0.03325352",
+            "fiat_to_eur_rate": "1.00000000",
+            "wallet_id": "b8448e50-21e4-11e8-923c-83856b384ff7",
+            "fiat_wallet_id": "4019cdb0-1d62-11e8-b4b2-313f9b0a3bca",
+            "payment_option_id": "12",
+            "time": {
+                "date_iso8601": "2019-02-05T11:41:04+01:00",
+                "unix": "1549363264"
+            },
+            "price": "3007.20",
+            "is_swap": false
+        },
+        "id": "88ea98a0-2932-11e9-91da-8bbc17ef282b"
+    },
+    {
+        "type": "trade",
+        "attributes": {
+            "status": "finished",
+            "type": "buy",
+            "cryptocoin_id": "1",
+            "fiat_id": "1",
+            "amount_fiat": "50.00",
+            "amount_cryptocoin": "0.01662676",
+            "fiat_to_eur_rate": "1.00000000",
+            "wallet_id": "b8448e50-21e4-11e8-923c-83856b384ff7",
+            "fiat_wallet_id": "4019cdb0-1d62-11e8-b4b2-313f9b0a3bca",
+            "payment_option_id": "12",
+            "time": {
+                "date_iso8601": "2019-02-05T11:40:21+01:00",
+                "unix": "1549363221"
+            },
+            "price": "3007.20",
+            "is_swap": false
+        },
+        "id": "6f6ba3a0-2932-11e9-bdcb-efc7d8bd663c"
+    }
+  ],
+  "meta": {
+      "total_count": 114,
+      "page": 1,
+      "page_size": 2
+  },
+  "links": {
+      "next": "?page=2&page_size=2",
+      "last": "?page=57&page_size=2",
+      "self": "?page=1&page_size=2"
+  }
+}
+any
